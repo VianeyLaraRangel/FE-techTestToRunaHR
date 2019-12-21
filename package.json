@@ -34,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "babel-preset-airbnb": "^4.4.0",
     "gh-pages": "^2.1.1"
   }
 }

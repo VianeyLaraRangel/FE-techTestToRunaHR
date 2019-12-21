@@ -3,15 +3,16 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import {Home, Characters} from './Views';
+import Home from './Views/Home';
+import Characters from './Views/Characters';
 
-const App = () => {
+const App = () => (
   <Router>
     <Switch>
-      <Route exact path="/"><Home/></Route>
-      <Route exact path="/characters"><Characters/></Route>
+      <Route exact path="/" component={Home}></Route>
+      <Route exact path="/characters" component={Characters}></Route>
     </Switch>
   </Router>
-}
+)
 
 export default App;

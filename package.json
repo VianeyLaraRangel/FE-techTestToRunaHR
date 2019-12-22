@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "babel-preset-airbnb": "^4.4.0",
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "webpack": "^4.41.4"
   }
 }

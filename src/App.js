@@ -3,8 +3,8 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Home from './Views/Home';
-import Characters from './Views/Characters';
+import Home from './Views/Home/index';
+import Characters from './Views/Characters/index';
 
 const App = () => (
   <Router>

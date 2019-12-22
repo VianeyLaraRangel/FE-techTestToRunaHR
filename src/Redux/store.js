@@ -1,12 +1,8 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
 
-import spells from './reducers/spells';
+import reducer from "./reducers/reducer";
 
-const reducer = combineReducers({
-    //Here middleware if its necessary
-    spells
-});
-
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;

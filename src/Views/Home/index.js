@@ -1,5 +1,5 @@
 import React from 'react';
-import Spells from '../../Data/SpellsData';
+import Spells from '../../Data/apiData';
 
 const Home = () => (
     <div>

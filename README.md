@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PotterSpells
 
-## Available Scripts
+Is a WebApp that allows you to visualize many of the spells, curses, enchantments and charms of Harry Potter´s saga. 
 
-In the project directory, you can run:
+You can quickly know about name, effect and classification of spell with a image can be identified category.
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How I built this application
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This project was very challenging in many aspects, when I received the challenge and read the goals, the first thing I identified was choosing the "theme".
 
-### `npm test`
+The first steps were:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Review the available APIs and make requests with Postman to observe the data and how "encapsulated" it was.
 
-### `npm run build`
+    I chose an API that required a key to use and with the data that I like the most.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. The creation of the project with React and the installation of the dependencies required just like REDUX and the AirBnB style guide.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The "create-react-app" command was used, so it worked on the folder structure it offers, such as build, public, package.json, etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. For the architecture, I investigate the use of Redux and React Hooks, then I discovered that according with RunaHR-test, it was necessary to emulate a FLUX architecture.
 
-### `npm run eject`
+!(Flux)[]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Routing was created at the entry point of the application, so the routes direct to the views, in a VIEWS folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. The "store" and the "reducer", were written in a REDUX folder.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+6. The data was consumed without a library and so that it could be used when loading the page I created my own "useFetch" hook inside a functional component, in a DATA folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+7. The necessary components for the home view were created as a "Navbar" and a "Card" which receives as "props" the information from the apiData component. Each component is saved in its own folder with the corresponding style file, in a COMPONENTS folder.
 
-## Learn More
+8. All images used in the application are in an ASSETS folder.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Next steps
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+According to the goals below, my next steps would be to fix the use of redux and create a middleware to better used of the store, add a "favorite" button to the data card to send to another component in the one that could delete an item, the hooks were already used so... this action depends on the use of a reduce to control the state in another view.
 
-### Code Splitting
+I want to keep learning about Redux.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [x]   Set up a green field project using react and redux
 
-### Analyzing the Bundle Size
+- [x] Get information from an open api
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [x] Use redux to store and control your information.
 
-### Making a Progressive Web App
+- [ ] Use the redux state to build a list of items
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- [ ] Allow us to load more items and delete items from the list using hooks.
 
-### Advanced Configuration
+- [x] Make it pretty
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- [ ] Write unit tests. Writing tests is required for senior positions.
 
-### Deployment
+- [x] Deploy this project to a public url, this is to insure we can test your app and how it works.
+ 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

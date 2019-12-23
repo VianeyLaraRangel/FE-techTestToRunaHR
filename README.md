@@ -6,6 +6,9 @@ You can quickly know about name, effect and classification of spell with a image
 
 
 ## How I built this application
+The sprint planning avalaible [here](https://trello.com/b/ShiZeT6Y/prueba-t%C3%A9cnica-runahr)
+
+!
 
 This project was very challenging in many aspects, when I received the challenge and read the goals, the first thing I identified was choosing the "theme".
 
@@ -20,8 +23,6 @@ The first steps were:
 The "create-react-app" command was used, so it worked on the folder structure it offers, such as build, public, package.json, etc.
 
 3. For the architecture, I investigate the use of Redux and React Hooks, then I discovered that according with RunaHR-test, it was necessary to emulate a FLUX architecture.
-
-!(Flux)[]
 
 4. Routing was created at the entry point of the application, so the routes direct to the views, in a VIEWS folder.
 
@@ -54,6 +55,8 @@ I want to keep learning about Redux.
 - [ ] Write unit tests. Writing tests is required for senior positions.
 
 - [x] Deploy this project to a public url, this is to insure we can test your app and how it works.
+
+### Thanks!
  
 
 

@@ -5,7 +5,6 @@ import {
     CardBody,
     CardTitle,
     CardSubtitle,
-    Button,
     CardImg,
 } from 'reactstrap';
 
@@ -51,24 +50,20 @@ const CardToUniqueSpell = ({ spell, type, effect }) => {
     }
 
     return (
-            <Card>
-                <CardImg width="10%" src={spellImage(type)} alt="Card image cap" />
-                <CardBody>
-                    <CardTitle>
-                        <p>Name:</p>
-                        {spell}
-                    </CardTitle>
-                    <CardSubtitle>
-                        <p>Type:</p>
-                        {type}
-                    </CardSubtitle>
-                    <CardText>
-                        <p>¿What is the effect?</p>
-                        {effect}
-                    </CardText>
-                    <Button>Seleccionar</Button>
-                </CardBody>
-            </Card>
+        <Card>
+            <CardImg width="10%" src={spellImage(type)} alt="Card image cap" />
+            <CardBody>
+                <CardTitle>
+                    {type}
+                </CardTitle>
+                <CardSubtitle>
+                    {spell}
+                </CardSubtitle>
+                <CardText>
+                    {effect}
+                </CardText>
+            </CardBody>
+        </Card>
     );
 };
 

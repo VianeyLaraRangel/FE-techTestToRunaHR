@@ -1,0 +1,32 @@
+/*Tags*/
+
+nav {
+    background-color: #873436;
+    height: 5rem;
+}
+
+nav ul {
+    margin-left: 3rem;
+}
+
+
+
+/*Id*/
+
+/*Class*/
+.navbar-brand {
+ display: flex;
+ justify-content: flex-start !important;   
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 1024px) {
+    nav {
+        height: auto;
+    }
+    .navbar-brand {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

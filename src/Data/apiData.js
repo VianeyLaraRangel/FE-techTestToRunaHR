@@ -1,65 +1,56 @@
 import React, { useState, useEffect } from 'react';
 
+import List from '../Components/SpellsList';
+
 //My custom hook
-const useFetch = (dataResponse) => {
+const useFetch = (apiEndpoint, dataResponse) => {
     // Declare a new state variable to save data from API
     const [data, setData] = useState(dataResponse);
 
-    const key = process.env.API_KEY;
-
-    const apiEndpoint = `https://www.potterapi.com/v1/spells?key=${key}`;
-
-    const getDataOfSpells = async () => {
-        try {
-            const response = await fetch(apiEndpoint);
-            const data = await response.json();
-            console.log(data);
-        } catch (e) {
-            console.log('erroooor');
-        }
-    };
 
 
-    // const apiEndpoint = new URL('https://www.potterapi.com/v1/spells/'), params = { key: key }
-
-    // Object.keys(params).forEach(key => apiEndpoint.searchParams.append(key, params[key]))
-
-    //Function to ajax request
-    //     const getDataOfSpells = () => {
-
-    //         // return fetch(apiEndpoint, { key: key })
-    //         //     .then((response) => response.json())
-    //         //     .then((info) => {
-    //         //         let spells = info;
-    //         //         console.log(spells);
-    //         //         setData({
-    //         //             isLoading: false,
-    //         //             data: spells
-    //         //         })
-    //         //         return spells;
-    //         //     })
-    // }
 
     useEffect(() => {
+        async function getDataOfSpells() {
+            try {
+                const response = await fetch(apiEndpoint);
+                const data = await response.json();
+                setData({
+                    isLoading: false,
+                    data: data
+                })
+                console.log(data);
+                return data;
+            } catch (e) {
+                console.log(e);
+            }
+        };
         getDataOfSpells()
-    }, []);
+    }, [apiEndpoint]);
 
     return data;
 
 }
 
-
 const Spells = () => {
-    const useFetchResponse = useFetch({ isLoading: true, data: null })
 
-    const { spells } = useFetchResponse;
-    console.log(spells);
+    const key = '$2a$10$4tEN6D3D/FFAywchrprgNuppzyUXyGNtrfX3iiitvkT42GWuJhm0S';
+    const apiEndpoint = `https://www.potterapi.com/v1/spells?key=${key}`;
+
+    const useFetchResponse = useFetch(apiEndpoint, { isLoading: true, data: null })
+    if (useFetchResponse === null || useFetchResponse.isLoading === false) {
+        console.log('Loading...')
+    }
+
+    const spells = useFetchResponse.data;
 
     return (
         <div>
+            {useFetchResponse.isLoading && <p>Holaaaa</p> }
+            {!useFetchResponse.isLoading && <List
+            spells={spells}
+            /> }
             <p>Hear Data from API</p>
-            <p></p>
-            <p>{spells}</p>
         </div>
     )
 }

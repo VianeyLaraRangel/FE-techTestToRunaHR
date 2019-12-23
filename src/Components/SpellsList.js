@@ -3,7 +3,7 @@ import Card from './Card/Card';
 
 const SpellsList = (props) => {
     return (
-        <div>
+        <section>
             {props && props.spells.map(spell =>
                 <Card 
                 key={spell._id}
@@ -12,7 +12,7 @@ const SpellsList = (props) => {
                 effect={spell.effect}
                 />)
             }
-        </div>
+        </section>
     );
 };
 

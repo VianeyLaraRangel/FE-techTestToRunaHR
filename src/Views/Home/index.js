@@ -5,10 +5,10 @@ import Navbar from '../../Components/Navbar/Navbar';
 import './style.css';
 
 const Home = () => (
-    <div>
-        <nav>
+    <div className="home-view">
+        <header>
             <Navbar />
-        </nav>
+        </header>
         <aside>
             <Spells />
         </aside>

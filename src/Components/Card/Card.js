@@ -7,7 +7,6 @@ import {
     CardSubtitle,
     Button,
     CardImg,
-    CardImgOverlay
 } from 'reactstrap';
 
 import './card.css';
@@ -52,19 +51,24 @@ const CardToUniqueSpell = ({ spell, type, effect }) => {
     }
 
     return (
-        <section>
-            <Card className="card" inverse>
+            <Card>
                 <CardImg width="10%" src={spellImage(type)} alt="Card image cap" />
-                <CardImgOverlay>
-                    <CardBody>
-                        <CardTitle>{spell}</CardTitle>
-                        <CardSubtitle>{type}</CardSubtitle>
-                        <CardText>{effect}</CardText>
-                        <Button>Seleccionar</Button>
-                    </CardBody>
-                </CardImgOverlay>
+                <CardBody>
+                    <CardTitle>
+                        <p>Name:</p>
+                        {spell}
+                    </CardTitle>
+                    <CardSubtitle>
+                        <p>Type:</p>
+                        {type}
+                    </CardSubtitle>
+                    <CardText>
+                        <p>¿What is the effect?</p>
+                        {effect}
+                    </CardText>
+                    <Button>Seleccionar</Button>
+                </CardBody>
             </Card>
-        </section>
     );
 };
 

@@ -1,3 +1,29 @@
 .card {
-    width: 20rem;
+    width: 10rem;
+    height: 10rem;
+    color: #383536;
+    font-size: 1rem;
+    opacity: .8;
+    display: flex;
+    flex-direction: row;
 }
+
+.card-body {
+    background-color: #383536;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+/*
+.card-title {
+
+}
+.card-subtitle {
+
+}
+.card-text {
+
+}
+.btn {
+
+} */

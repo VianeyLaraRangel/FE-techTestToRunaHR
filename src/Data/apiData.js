@@ -39,12 +39,12 @@ const Spells = () => {
     const spells = useFetchResponse.data;
 
     return (
-        <div>
+        <main>
             {useFetchResponse.isLoading && <p>Holaaaa</p> }
             {!useFetchResponse.isLoading && <List
             spells={spells}
             /> }
-        </div>
+        </main>
     )
 }
 

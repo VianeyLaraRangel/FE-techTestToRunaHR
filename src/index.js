@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Provider } from 'react-redux';
 
@@ -14,6 +15,3 @@ const appConnectToProviderRedux = (
     </Provider>
 )
 ReactDOM.render(appConnectToProviderRedux, container);
-
-// import * as serviceWorker from './serviceWorker';
-// serviceWorker.unregister();

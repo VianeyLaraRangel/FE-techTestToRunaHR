@@ -44,7 +44,6 @@ const Spells = () => {
             {!useFetchResponse.isLoading && <List
             spells={spells}
             /> }
-            <p>Hear Data from API</p>
         </div>
     )
 }

@@ -1,11 +1,22 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button, CardImg, CardImgOverlay } from 'reactstrap';
+import {
+    Card,
+    CardText,
+    CardBody,
+    CardTitle,
+    CardSubtitle,
+    Button,
+    CardImg,
+    CardImgOverlay
+} from 'reactstrap';
+
+import './card.css';
 
 // import { spellImg, curseImg, charmImg, enchantment } from '../Assets/'
-import spellImg from '../Assets/spellImg.png';
-import charmImg from '../Assets/charmImg.png';
-import curseImg from '../Assets/curseImg.png';
-import enchantmentImg from '../Assets/enchantmentImg.png';
+import spellImg from '../../Assets/spellImg.png';
+import charmImg from '../../Assets/charmImg.png';
+import curseImg from '../../Assets/curseImg.png';
+import enchantmentImg from '../../Assets/enchantmentImg.png';
 
 const CardToUniqueSpell = ({ spell, type, effect }) => {
 
@@ -30,21 +41,21 @@ const CardToUniqueSpell = ({ spell, type, effect }) => {
         ];
 
         const result = collection.filter(obj => obj.type === spelltype);
-        
+
         // console.log(result[0].image);
 
-        if (result.length > 0 ) {
+        if (result.length > 0) {
             return result[0].image;
         } else {
-            return enchantmentImg ;
+            return enchantmentImg;
         }
     }
 
     return (
-        <div>
-            <Card>
+        <section>
+            <Card className="card" inverse>
+                <CardImg width="10%" src={spellImage(type)} alt="Card image cap" />
                 <CardImgOverlay>
-                    <CardImg width="20%" src={spellImage(type)} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>{spell}</CardTitle>
                         <CardSubtitle>{type}</CardSubtitle>
@@ -53,7 +64,7 @@ const CardToUniqueSpell = ({ spell, type, effect }) => {
                     </CardBody>
                 </CardImgOverlay>
             </Card>
-        </div>
+        </section>
     );
 };
 

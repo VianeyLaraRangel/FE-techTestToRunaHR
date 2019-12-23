@@ -7,9 +7,6 @@ const useFetch = (apiEndpoint, dataResponse) => {
     // Declare a new state variable to save data from API
     const [data, setData] = useState(dataResponse);
 
-
-
-
     useEffect(() => {
         async function getDataOfSpells() {
             try {
@@ -38,10 +35,7 @@ const Spells = () => {
     const apiEndpoint = `https://www.potterapi.com/v1/spells?key=${key}`;
 
     const useFetchResponse = useFetch(apiEndpoint, { isLoading: true, data: null })
-    if (useFetchResponse === null || useFetchResponse.isLoading === false) {
-        console.log('Loading...')
-    }
-
+    
     const spells = useFetchResponse.data;
 
     return (

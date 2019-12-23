@@ -4,25 +4,47 @@ import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button, CardImg, Car
 // import { spellImg, curseImg, charmImg, enchantment } from '../Assets/'
 import spellImg from '../Assets/spellImg.png';
 import charmImg from '../Assets/charmImg.png';
-import curserImg from '../Assets/curseImg.png';
+import curseImg from '../Assets/curseImg.png';
 import enchantmentImg from '../Assets/enchantmentImg.png';
 
-
-// const spellImage = {
-//     spell: "../Assets/spellImg.png",
-//     curse: "",
-//     charm: "",
-//     enchantment: ""
-
-// }
-
 const CardToUniqueSpell = ({ spell, type, effect }) => {
-    console.log(spell);
+
+    const spellImage = (spelltype) => {
+        let collection = [
+            {
+                type: "Charm",
+                image: charmImg,
+            },
+            {
+                type: "Enchantment",
+                image: enchantmentImg,
+            },
+            {
+                type: "Curse",
+                image: curseImg,
+            },
+            {
+                type: "Spell",
+                image: spellImg,
+            }
+        ];
+
+        const result = collection.filter(obj => obj.type === spelltype);
+        
+        // console.log(result[0].image);
+
+        if (result.length > 0 ) {
+            return result[0].image;
+        } else {
+            return enchantmentImg ;
+        }
+    }
+
     return (
         <div>
             <Card>
                 <CardImgOverlay>
-                    <CardImg width="20%" src={spellImg} alt="Card image cap" />
+                    <CardImg width="20%" src={spellImage(type)} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>{spell}</CardTitle>
                         <CardSubtitle>{type}</CardSubtitle>

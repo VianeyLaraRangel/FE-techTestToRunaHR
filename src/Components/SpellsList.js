@@ -2,7 +2,6 @@ import React from 'react';
 import Card from './Card'; 
 
 const SpellsList = (props) => {
-    console.log(props);
     return (
         <div>
             {props && props.spells.map(spell =>

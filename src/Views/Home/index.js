@@ -9,7 +9,9 @@ const Home = () => (
         <nav>
             <Navbar />
         </nav>
-        <Spells />
+        <aside>
+            <Spells />
+        </aside>
     </div>
 );
 

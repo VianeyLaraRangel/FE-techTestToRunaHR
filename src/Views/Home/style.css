@@ -3,6 +3,14 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: #f0f0f0 !important;
 }
+
+aside {
+    background: url(../../Assets/hogsmeade.jpg);
+    background-size: cover;
+    height: calc(100vh - 85.63px);
+}
+
 

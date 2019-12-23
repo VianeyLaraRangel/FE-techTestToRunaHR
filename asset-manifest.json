@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "./static/css/main.a0f69134.chunk.css",
-    "main.js": "./static/js/main.08298b32.chunk.js",
-    "main.js.map": "./static/js/main.08298b32.chunk.js.map",
+    "main.css": "./static/css/main.ec113036.chunk.css",
+    "main.js": "./static/js/main.32a72eba.chunk.js",
+    "main.js.map": "./static/js/main.32a72eba.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.61e705e5.js",
     "runtime-main.js.map": "./static/js/runtime-main.61e705e5.js.map",
     "static/css/2.17e5ed98.chunk.css": "./static/css/2.17e5ed98.chunk.css",
-    "static/js/2.5d361e22.chunk.js": "./static/js/2.5d361e22.chunk.js",
-    "static/js/2.5d361e22.chunk.js.map": "./static/js/2.5d361e22.chunk.js.map",
+    "static/js/2.b73e85fd.chunk.js": "./static/js/2.b73e85fd.chunk.js",
+    "static/js/2.b73e85fd.chunk.js.map": "./static/js/2.b73e85fd.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.4e2ffd18433b078bee688bccc8140f70.js": "./precache-manifest.4e2ffd18433b078bee688bccc8140f70.js",
+    "precache-manifest.fe3d235e36080a8500e6ba0630a24abf.js": "./precache-manifest.fe3d235e36080a8500e6ba0630a24abf.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "./static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.a0f69134.chunk.css.map": "./static/css/main.a0f69134.chunk.css.map",
-    "static/js/2.5d361e22.chunk.js.LICENSE": "./static/js/2.5d361e22.chunk.js.LICENSE",
+    "static/css/main.ec113036.chunk.css.map": "./static/css/main.ec113036.chunk.css.map",
+    "static/js/2.b73e85fd.chunk.js.LICENSE": "./static/js/2.b73e85fd.chunk.js.LICENSE",
     "static/media/charmImg.png": "./static/media/charmImg.7baf4d29.png",
     "static/media/curseImg.png": "./static/media/curseImg.5ccf1232.png",
     "static/media/enchantmentImg.png": "./static/media/enchantmentImg.bc0221d6.png",
+    "static/media/style.css": "./static/media/hogsmeade.e6b9019f.jpg",
+    "static/media/logo_harryspell.png": "./static/media/logo_harryspell.5281252b.png",
     "static/media/spellImg.png": "./static/media/spellImg.fc562901.png"
   },
   "entrypoints": [
     "static/js/runtime-main.61e705e5.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.5d361e22.chunk.js",
-    "static/css/main.a0f69134.chunk.css",
-    "static/js/main.08298b32.chunk.js"
+    "static/js/2.b73e85fd.chunk.js",
+    "static/css/main.ec113036.chunk.css",
+    "static/js/main.32a72eba.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6bffd172c4792f3128dfaee00259e996",
+    "revision": "4c3c039a14b2c25cd82a8beb0fa16543",
     "url": "./index.html"
   },
   {
-    "revision": "c04d960724bb10bf6fa4",
+    "revision": "4434446806dc73c5e199",
     "url": "./static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "4df5e496b59869b2fd8b",
-    "url": "./static/css/main.a0f69134.chunk.css"
+    "revision": "1468b6871bd9ef666b0f",
+    "url": "./static/css/main.ec113036.chunk.css"
   },
   {
-    "revision": "c04d960724bb10bf6fa4",
-    "url": "./static/js/2.5d361e22.chunk.js"
+    "revision": "4434446806dc73c5e199",
+    "url": "./static/js/2.b73e85fd.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "./static/js/2.5d361e22.chunk.js.LICENSE"
+    "url": "./static/js/2.b73e85fd.chunk.js.LICENSE"
   },
   {
-    "revision": "4df5e496b59869b2fd8b",
-    "url": "./static/js/main.08298b32.chunk.js"
+    "revision": "1468b6871bd9ef666b0f",
+    "url": "./static/js/main.32a72eba.chunk.js"
   },
   {
     "revision": "07b8ac5ea5ca1ff3f8a4",
@@ -38,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bc0221d630e48281255eda208df2de8e",
     "url": "./static/media/enchantmentImg.bc0221d6.png"
+  },
+  {
+    "revision": "e6b9019f2ed658568cb419a7fcfdb328",
+    "url": "./static/media/hogsmeade.e6b9019f.jpg"
+  },
+  {
+    "revision": "5281252bc4be9089253c682f2bcf9b17",
+    "url": "./static/media/logo_harryspell.5281252b.png"
   },
   {
     "revision": "fc562901c70c3018eddd633a84eeabdd",
